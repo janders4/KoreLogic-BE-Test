@@ -33,13 +33,19 @@ npm run server
 Once the server is up and running the following endpoints and methods will be available at localhost:8000. Enter the following examples into a browser for to receive the associated restaurant information:
 
 /api/restaurants (returns all restaurants)
-eg: localhost:8000/api/restaurants
+```
+localhost:8000/api/restaurants
+```
 
 /api/restaurants/:id (returns a specific restaurant's details)
-eg: localhost:8000/api/restaurants/Salami & Co
+```
+localhost:8000/api/restaurants/Salami & Co
+```
 
 /api/restaurants?query (returns a filtered list of restaurants depending on the queries passed)
-eg: localhost:8000/api/restaurants?rating=4&vegan-options=true
+```
+localhost:8000/api/restaurants?rating=4&vegan-options=true
+```
 
 ## Running the Tests
 
