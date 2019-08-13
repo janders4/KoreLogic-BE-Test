@@ -5,7 +5,8 @@ const {
 
 exports.getAllRestaurants = (req, res, next) => {
   try {
-    const restaurants = fetchAllRestaurants();
+    const params = req.query;
+    const restaurants = fetchAllRestaurants(params);
     res.status(200).send(restaurants);
   } catch (error) {
     next(error);
